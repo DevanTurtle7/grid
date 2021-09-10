@@ -47,4 +47,3 @@ app.*.map.json
 
 # Credential Related
 **/AndroidManifest.xml
-android/app/src/main/AndroidManifest.xml # Contains maps API key
