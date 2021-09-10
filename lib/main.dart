@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'map.dart';
 
 void main() {
   runApp(const MyApp());
@@ -49,6 +50,12 @@ class _MyHomePageState extends State<MyHomePage> {
             const Text(
               'You have pushed the button this many times:',
             ),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const MapPage()));
+                },
+                child: const Text('Open Map')),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
